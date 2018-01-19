@@ -17,6 +17,7 @@ namespace Delegates
                 new Stroj("stroj2"),
                 new Stroj("stroj3"),
                 new Stroj("stroj4")
+
             };
         }
     }

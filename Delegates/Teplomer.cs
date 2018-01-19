@@ -8,9 +8,8 @@ namespace Delegates
 {
     class Teplomer
     {
-
-
+        
         public delegate void PrehriatieHandler(int teplota);
-        public event PrehriatieHandler PrehriatieStroja;
+        public event PrehriatieHandler Prehriatie;
     }
 }

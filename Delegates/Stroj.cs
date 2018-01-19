@@ -9,10 +9,18 @@ namespace Delegates
     class Stroj
     {
         private string nazovStroja;
+        private Teplomer teplomer = new Teplomer();
 
         public Stroj(string nazovStroja)
         {
+            teplomer.Prehriatie
+            
             this.nazovStroja = nazovStroja;
+        }
+
+        private void onPrehriatieStroja()
+        {
+            VypniStroj();
         }
 
         public void ZapniStroj()

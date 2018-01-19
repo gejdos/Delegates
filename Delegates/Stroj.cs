@@ -13,13 +13,14 @@ namespace Delegates
 
         public Stroj(string nazovStroja)
         {
-            teplomer.Prehriatie
+            teplomer.Prehriatie += onPrehriatieStroja;
             
             this.nazovStroja = nazovStroja;
         }
 
-        private void onPrehriatieStroja()
+        private void onPrehriatieStroja(int teplota)
         {
+            Console.WriteLine("Doslo k prekroceniu prevadzkovej teploty.");
             VypniStroj();
         }
 

@@ -9,6 +9,8 @@ namespace Delegates
     class Teplomer
     {
         
+        private Timer 
+
         public delegate void PrehriatieHandler(int teplota);
         public event PrehriatieHandler Prehriatie;
     }

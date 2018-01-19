@@ -9,9 +9,8 @@ namespace Delegates
 {
     class Teplomer
     {
-
         private Timer timer;
-        private Random randomizer = new Random();
+        private static Random randomizer = new Random();
 
         public Teplomer()
         {

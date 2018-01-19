@@ -11,6 +11,8 @@ namespace Delegates
     {
         private Timer timer;
         private static Random randomizer = new Random();
+        public delegate void PrehriatieHandler(int teplota);
+        public event PrehriatieHandler Prehriatie;
 
         public Teplomer()
         {
@@ -29,8 +31,5 @@ namespace Delegates
             }
 
         }
-
-        public delegate void PrehriatieHandler(int teplota);
-        public event PrehriatieHandler Prehriatie;
     }
 }

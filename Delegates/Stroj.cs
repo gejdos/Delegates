@@ -10,6 +10,7 @@ namespace Delegates
     {
         private string nazovStroja;
         private Teplomer teplomer = new Teplomer();
+        
 
         public Stroj(string nazovStroja)
         {
@@ -31,7 +32,8 @@ namespace Delegates
 
         public void VypniStroj()
         {
-            Console.WriteLine("Vypinam {0}", nazovStroja);
+            string datetime = DateTime.Now.ToLongTimeString();
+            Console.WriteLine("Vypinam {0} ({1})", nazovStroja, datetime);
         }
 
         

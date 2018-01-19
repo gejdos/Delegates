@@ -8,8 +8,11 @@ namespace Delegates
 {
     class Program
     {
+        public delegate void Logger(string message);
+
         static void Main(string[] args)
         {
+
         }
     }
 }

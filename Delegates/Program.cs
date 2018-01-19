@@ -8,11 +8,16 @@ namespace Delegates
 {
     class Program
     {
-        public delegate void Logger(string message);
-
+        
         static void Main(string[] args)
         {
-
+            Stroj[] poleStrojov = new Stroj[]
+            {
+                new Stroj("stroj1"),
+                new Stroj("stroj2"),
+                new Stroj("stroj3"),
+                new Stroj("stroj4")
+            };
         }
     }
 }
